@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio en Construcción</title>
+    <style>
+        /* Definición de colores basados en la imagen */
+        :root {
+            --bg-top: #73a6d9;    /* Azul del cielo */
+            --bg-bottom: #9287c2; /* Tono púrpura de la base */
+            --text-color: #ffffff;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* Fondo degradado para que coincida con la imagen */
+            background: linear-gradient(to bottom, var(--bg-top), var(--bg-bottom));
+            color: var(--text-color);
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .construction-img {
+            max-width: 90%;
+            height: auto;
+            border-radius: 20px;
+            /* Sombra suave para dar profundidad */
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 10px 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* Pequeña animación de "latido" para la imagen */
+        .pulse {
+            animation: pulse-animation 3s infinite ease-in-out;
+        }
+
+        @keyframes pulse-animation {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="Gemini_Generated_Image_eurxoaeurxoaeurx.jpg" alt="Gatito constructor" class="construction-img pulse">
+        
+        <h1>¡Estamos trabajando en algo increíble!</h1>
+        <p>Nuestro sitio web se encuentra actualmente en construcción.</p>
+        <p>Vuelve pronto para ver las novedades.</p>
+    </div>
+
+</body>
+</html>
